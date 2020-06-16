@@ -7,7 +7,7 @@ header{
 }
 section{
     margin: 0 auto;
-    width: 80%;
+    width: 80%; 
     padding: 50px 80px;
 }
 h3{
@@ -62,19 +62,6 @@ h3{
 .category{
     text-align: center;
 }
-@media screen and (max-width:1000px){
-    .category > div{
-        padding: 30px 50px;
-    }
-    .category select{
-        font-size: 20px;
-        height: 50px;
-    }
-    .category i{
-        font-size: 17px;
-        padding: 17px 22px;
-    }
-}
 /* parts section styles */
 .parts .btn{
     display: flex;
@@ -83,12 +70,6 @@ h3{
     width: 30%;
     font-size: 20px;
     text-align: center;
-}
-@media screen and (max-width:1000px){
-    .parts .btn{
-        padding: 20px;
-        font-size: 18px;
-    }
 }
 /* brand section styles */
 .brand .wrapper{
@@ -116,65 +97,4 @@ h3{
 .brand div:last-child a:hover{
     background-color: #3B3B3B;
     color: #fff;
-}
-@media screen and (max-width:1000px){
-    .brand .wrapper{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media screen and (max-width:800px){
-    .brand .wrapper{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media screen and (max-width:1200px){
-    section{
-        width: 100%;
-    }
-    .hero{
-        grid-template-columns: 1fr 500px;
-    }
-    .hero .hero-text h1{
-        font-size: 25px;
-    }
-    .hero .hero-text p{
-        font-size: 17px;
-    }
-    .btn{
-        justify-content: center;
-        width: 40%;
-        font-size: 20px;
-        padding: 18px;
-    } 
-}
-@media screen and (max-width:1100px){
-    header{
-        position: absolute;
-        width: 100%;
-    }
-    .hero{
-        display: block;
-        height: 70vh;
-        opacity: 1;
-        background-image: url(../images/Download-Engine\ 1.png);
-        background-position: center;
-        background-size: cover;
-    }
-    .hero .hero-text{
-        width: 70%;
-        text-align: center;
-        display: block;
-        position: absolute;
-        top: 20%;
-        left: 15%;
-    }
-    .hero .hero-text .btn{
-        margin: 0 auto;
-    }
-    .hero .hero-img{
-        display: none;
-    }
-    /* .hero svg{
-        display: none;
-    } */
 }
