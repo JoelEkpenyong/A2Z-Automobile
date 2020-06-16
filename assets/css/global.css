@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* colors */
+:root{
+    --primary: #F7BE16;
+    --seconndary:#3B3B3B;
+}
+/* header styles */
+header{
+    padding:80px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > .logo{
+    font: 25px bold;
+}
+header > a span{
+    color: var(--primary);
+}
+header .navlink a{
+    font: 18px bold;
+    padding: 0 1em;
+    margin-left: 1em;
+}
+header .navlink a:hover{
+    border-bottom: 3px solid #F7BE16;
+}
+header .navlink a:last-of-type{
+    padding: 0;
+}
+header .navlink a:nth-child(4):hover{
+    border: 0;
+    color: var(--primary);
+}
+/* footer styles */
+footer{
+    background: #3B3B3B;
+    margin-top: 50px;
+}
+.footer-text{
+    width: 40%;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text h4{
+    margin: 0;
+}
+.footer-text p{
+    margin: 20px 0;
+}
+footer .media-logo i{
+    padding: 0 15px;
+}
+.footer-text .media-logo .facebook{
+    color:  #3B5998;
+}
+.footer-text .media-logo .twitter{
+    color:  #00ACEE;
+}
+.footer-text .media-logo .instagram{
+    color:  #CC3366;
+}
+footer .floor{
+    padding:0 30px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+figure{
+    margin: 0;
+}
+figcaption{
+    font-size: 25px;
+    margin: 25px 0;
+    text-align: center;
+}
+ul, li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 55px 70px;
+    background: #000;
+    border-radius: 10px;
+}
+.selection select{
+    padding: 0 15px;
+    font-weight: 600;
+    font-size: 25px;
+    flex-basis: 25%;
+    height: 64px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.selection button{
+    padding: 0;
+    border: 0;
+    background: #000;
+    outline: none;
+
+}
+.selection i{
+    font-size: 20px;
+    padding: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--primary);
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding-bottom: 70px;
+}
+.card{
+    width: 180px;
+    margin: 20px;
+    box-shadow:
+        0 12.5px 10px rgba(0, 0, 0, 0.035),
+        0 100px 80px rgba(0, 0, 0, 0.07)
+        ;
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.card:hover{
+    color: var(--primary);
+    transform: scale(1.1);
+}
